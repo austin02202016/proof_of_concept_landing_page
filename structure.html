@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <section id="home" class="section">
+                <div class="content">
+                    <h1>Hey, Welcome To <span class="highlight">Proof Of Concept</span></h1>
+                    <p>The younger generation is full of <span class="highlight">talented entrepreneurs</span>. We've reached <span class="highlight">150,000</span> accounts on Instagram <span class="highlight">this month</span>. These innovators are redefining <span class="highlight">business landscapes</span> and pioneering <span class="highlight">new ventures</span> in unprecedented ways. Have a cool venture, business, initiative you want to share with the world? You've reached the right space.</p>
+                    <img src="poc_new_logo.png" alt="Your Photo" class="photo">
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/proofofconceptofficial/" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/proofofconceptofficial/posts/?feedView=all" target="_blank" class="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div id="dynamic-text" class="dynamic-text">
+                    <span id="typed"></span>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="register.html" class="custom-button">Click Here</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Typed('#typed', {
+                strings: ["Welcome Entrepreneurs :)", "Welcome students :)", "Welcome business-owners :)", 
+                          "Welcome leaders :)"],
+                typeSpeed: 50,
+                backSpeed: 50,
+                backDelay: 2000,
+                loop: true,
+                showCursor: true,
+                cursorChar: '|'
+            });
+        });
+    </script>
+</body>
+</html>

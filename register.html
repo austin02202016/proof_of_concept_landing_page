@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Interview - Proof Of Concept</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f0f0f0;
+            color: #333;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #1e90ff;
+            text-align: center;
+        }
+        .form-container form input,
+        .form-container form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container form button {
+            background: #1e90ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .form-container form button:hover {
+            background: #1c7ecf;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register for an Interview</h2>
+        <form id="questionnaire-form" action="https://script.google.com/macros/s/AKfycbz5l6fUvfM1HeoLr9C6Y1fNGQK-X15877Yl8IcX0ijB9MjAChtg5NE2ZHG7ze-w26io/exec" method="post">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="college" name="college" placeholder="Where do you go to school (if applicable)" required>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+            <input type="text" id="business" name="business" placeholder="What are you working on?" required>
+            <input type="text" id="one-liner" name="one-liner" placeholder="A one liner of what you do" required>
+            <input type="text" id="verification" name="verification" placeholder="How do we know you've acted on it? (Revenue, Clients, Songs Made etc.)" required>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
